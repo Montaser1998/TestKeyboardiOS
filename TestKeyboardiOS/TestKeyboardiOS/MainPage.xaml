@@ -3,14 +3,17 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:control="clr-namespace:TestKeyboardiOS"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+             ios:Page.UseSafeArea="true"
              mc:Ignorable="d"
              x:Class="TestKeyboardiOS.MainPage">
 
-    <StackLayout>
+    <control:KeyboardView>
         <!-- Place new controls here -->
         <Editor Text="Welcome to Xamarin.Forms!" 
            HorizontalOptions="FillAndExpand"
            VerticalOptions="EndAndExpand" />
-    </StackLayout>
+    </control:KeyboardView>
 
 </ContentPage>
